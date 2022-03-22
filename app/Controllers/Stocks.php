@@ -14,26 +14,26 @@ class stocks extends BaseController
         echo view('stocks/main');
     }
 
-    public function metodo1()
+    public function familias()
     {
-        echo '1';
+        echo view('stocks/familias');
     }
 
-    public function metodo2()
+    public function movimentos()
     {
 
-        echo '2';
+        echo view('stocks/movimentos');
     }
 
-    public function metodo3()
+    public function produtos()
     {
 
-        echo '3';
+        echo view('stocks/produtos');
     }
 
-    public function metodo4()
+    public function taxas()
     {
 
-        echo '4';
+        echo view('stocks/taxas');
     }
 }

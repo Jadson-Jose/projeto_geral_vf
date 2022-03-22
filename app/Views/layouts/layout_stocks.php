@@ -27,15 +27,15 @@
 
         <div class="row mb-5">
 
-            <div class="col-2">
+            <div class="col-2 mt-5">
 
-                <div class="text-center mt-3 mb-3">
+                <div class="text-center mt-5">
 
-                    <a href="<?php echo site_url('stocks/metodo1') ?>" class="btn btn-outline-secondary mb-2 btn-200">Botao 1</a>
-                    <a href="<?php echo site_url('stocks/metodo2') ?>" class="btn btn-outline-secondary mb-2 btn-200">Botao 2</a>
-                    <a href="<?php echo site_url('stocks/metodo3') ?>" class="btn btn-outline-secondary mb-2 btn-200">Botao 3</a>
-                    <a href="<?php echo site_url('stocks/metodo4') ?>" class="btn btn-outline-secondary mb-2 btn-200">Botao 4</a>
-                    <a href="<?php echo site_url('stocks/') ?>" class="btn btn-outline-secondary mb-2 btn-200">Botao 5</a>
+                    <a href="<?php echo site_url('stocks/familias') ?>" class="btn btn-outline-secondary mb-2 btn-150">Familias</a>
+                    <a href="<?php echo site_url('stocks/movimentos') ?>" class="btn btn-outline-secondary mb-2 btn-150">Movimentos</a>
+                    <a href="<?php echo site_url('stocks/produtos') ?>" class="btn btn-outline-secondary mb-2 btn-150">Produtos</a>
+                    <a href="<?php echo site_url('stocks/taxas') ?>" class="btn btn-outline-secondary mb-2 btn-150">Taxas</a>
+                    
 
                 </div>
 
