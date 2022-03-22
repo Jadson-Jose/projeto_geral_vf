@@ -7,6 +7,15 @@ $this->extend('layouts/layout_stocks');
 
 <?php $this->section('content'); ?>
 
-<h3>Estou dentro da view Stocks Main</h3>
+<div class="row mt-3">
+
+    <div class="col-12 text-center">
+
+        <div class="card bg-light p-4">
+
+            <h3>Área de gestão de Stocks</h3>
+        </div>
+    </div>
+</div>
 
 <?php $this->endSection(); ?>
