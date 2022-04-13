@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use App\Models\StocksModel;
 
 class stocks extends BaseController
 {
@@ -16,7 +17,12 @@ class stocks extends BaseController
 
     public function familias()
     {
-        echo view('stocks/familias');
+
+        // carregar os dados da familias para passar para a view
+        $model = new StocksModel();
+        $data['familias'] = $model->get_all_families();
+
+        echo view('stocks/familias', $data);
     }
 
     public function movimentos()
