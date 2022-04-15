@@ -15,6 +15,8 @@ class stocks extends BaseController
         echo view('stocks/main');
     }
 
+
+    // ==============================================================================
     public function familias()
     {
 
@@ -25,18 +27,47 @@ class stocks extends BaseController
         echo view('stocks/familias', $data);
     }
 
+
+    // ==============================================================================
+    public function familias_adicionar()
+    {
+
+        echo 'Formulario para adionar nova familia';
+    }
+
+
+    // ==============================================================================
+    public function familias_editar($id_familia)
+    {
+
+        echo 'Formulario para editar nova familia';
+    }
+
+    // ==============================================================================
+    public function familias_eliminar($id_familia)
+    {
+
+        echo 'Formulario para eliminar nova familia';
+    }
+
+
+    // ==============================================================================
     public function movimentos()
     {
 
         echo view('stocks/movimentos');
     }
 
+
+    // ==============================================================================
     public function produtos()
     {
 
         echo view('stocks/produtos');
     }
 
+
+    // ==============================================================================
     public function taxas()
     {
 
