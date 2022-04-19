@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\StocksModel;
+use CodeIgniter\Model;
 
 class stocks extends BaseController
 {
@@ -24,12 +25,6 @@ class stocks extends BaseController
         $model = new StocksModel();
         $data['familias'] = $model->get_all_families();
 
-        // echo '<pre>';
-        // print_r($data['familias']);
-        // echo '</pre>';
-
-        // die();
-
         echo view('stocks/familias', $data);
     }
 
@@ -37,8 +32,12 @@ class stocks extends BaseController
     // ==============================================================================
     public function familias_adicionar()
     {
+        // Add new familie
+        $model = new StocksModel();
+        $data['familias'] = $model->get_all_families();
 
-        echo 'Formulario para adionar nova familia';
+
+        echo view('stocks/familias_adicionar', $data);
     }
 
 
