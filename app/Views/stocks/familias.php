@@ -45,6 +45,7 @@ $this->extend('layouts/layout_stocks');
             <thead class="table-active">
                 <th>ID</th>
                 <th>Família</th>
+                <th>Parent</th>
                 <th class="text-end">Ações</th>
             </thead>
 
@@ -53,6 +54,7 @@ $this->extend('layouts/layout_stocks');
                     <tr>
                         <td><?php echo $familia['id_familia'] ?></td>
                         <td><?php echo $familia['designacao'] ?></td>
+                        <td><?php echo $familia['parent'] != '' ? $familia['parent'] : '-' ?></td>
 
                         <td class="text-end">
                             <a href="<?php echo site_url('stocks/familias_editar/' . $familia['id_familia']) ?>" class="btn btn-info">Editar</a>
