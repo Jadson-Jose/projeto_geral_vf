@@ -24,11 +24,17 @@ $this->extend('layouts/layout_stocks');
 
                 <h5>Familias de produtos: </h5>
 
+                <div class="div col-6-text-end">
+
+                    <a href="<?php echo site_url('stocks/familia_adicionar') ?>"></a>
+                
+                </div>
+
             </div>
 
             <div class="col6 text-end">
 
-                <a href="" class="btn btn-outline-primary mb-3">Adicionar familia...</a>
+                <a href="<?php echo site_url('stocks/familias_adicionar') ?>" class="btn btn-outline-primary mb-3">Adicionar familia...</a>
 
             </div>
         </div>
@@ -39,7 +45,7 @@ $this->extend('layouts/layout_stocks');
             <thead class="table-active">
                 <th>ID</th>
                 <th>Família</th>
-                <th>Ações</th>
+                <th class="text-end">Ações</th>
             </thead>
 
             <tbody>
@@ -48,8 +54,9 @@ $this->extend('layouts/layout_stocks');
                         <td><?php echo $familia['id_familia'] ?></td>
                         <td><?php echo $familia['designacao'] ?></td>
 
-                        <td>
-                            <!-- Acoes -->
+                        <td class="text-end">
+                            <a href="<?php echo site_url('stocks/familias_editar/' . $familia['id_familia']) ?>" class="btn btn-info">Editar</a>
+                            <a href="<?php echo site_url('stocks/familias_eliminar/' . $familia['id_familia']) ?>" class="btn btn-info">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
