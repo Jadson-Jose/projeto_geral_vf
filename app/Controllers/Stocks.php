@@ -24,6 +24,12 @@ class stocks extends BaseController
         $model = new StocksModel();
         $data['familias'] = $model->get_all_families();
 
+        // echo '<pre>';
+        // print_r($data['familias']);
+        // echo '</pre>';
+
+        // die();
+
         echo view('stocks/familias', $data);
     }
 
