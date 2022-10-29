@@ -38,7 +38,13 @@ class stocks extends BaseController
     public function familias_adicionar()
     {
 
-        echo 'Formulario para adionar nova familia';
+        // Adicionar nova familia
+        
+        // Carregar os dados das familias para passar para a view
+        $model = new StocksModel();
+        $data ['familias'] = $model->get_all_families();
+        
+        echo view('stocks/familias_adicionar', $data);
     }
 
 
