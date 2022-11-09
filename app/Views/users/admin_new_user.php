@@ -18,7 +18,7 @@ $session = session();
     <div class="col-4 offset-4 card bg-light p-2">
 
 
-        <form action="<?php echo site_url('users/admin_edit_user') ?>" method="POST">
+        <form action="<?php echo site_url('users/admin_new_user') ?>" method="POST">
 
             <div class="form-group">
 
@@ -26,7 +26,7 @@ $session = session();
 
                 <input type="text" name="text_username" class="form-control my-3" placeholder="Usuario" required>
 
-                <input type="text" name="text_password" class="form-control my-2" placeholder="Senha" value="<?= old('text_password') ?>" required>
+                <input type= "text" name="text_password" class="form-control my-2" placeholder="Senha" value="<?= old('text_password') ?>" required>
 
                 <input type="text" name="text_repeat_password" class="form-control my-2" placeholder="Repetir senha" required>
 
