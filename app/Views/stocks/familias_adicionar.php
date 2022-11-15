@@ -13,12 +13,12 @@
 
         <div class="col-12 mt-3">
 
-            <form action="" method="post">
+            <form action="<?php echo site_url('stocks/familias_adicionar')?>" method="post">
             
             <div class="form-group">
                 
                 <label>Familia a que pertence</label>
-                    <select name="" id="" class="form-control">
+                    <select name="select_parent" class="form-control">
                         <option value="0">Nenhuma</option>
                         <?php foreach($familias as $familia) : ?>
                             <option value="<?php echo $familia['id_familia'] ?>"><?php echo $familia['designacao'] ?></option>
@@ -30,7 +30,7 @@
             
             <div class="form-group my-3">
 
-                <label>Designacao</label>
+                <label>Designação</label>
                 <input class="form-control" type="text" name="text_designacao" id="" required>
 
             </div>    

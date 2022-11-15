@@ -23,12 +23,8 @@ class stocks extends BaseController
         // carregar os dados da familias para passar para a view
         $model = new StocksModel();
         $data['familias'] = $model->get_all_families();
-
-        // echo '<pre>';
-        // print_r($data['familias']);
-        // echo '</pre>';
-
-        // die();
+        
+      
 
         echo view('stocks/familias', $data);
     }
@@ -43,6 +39,25 @@ class stocks extends BaseController
         // Carregar os dados das familias para passar para a view
         $model = new StocksModel();
         $data ['familias'] = $model->get_all_families();
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+          
+            // Vai buscar os dados submetidos pelo fomrulario
+            $request = \Config\Services::request();
+            $id_parent = $request->getPost('select_parent');
+            $id_deigancao = $request->getPost('text_designacao');
+
+            $this->verDados(array($id_parent, $id_deigancao));
+            
+            
+            // echo $id_parent. '<br>';
+            // echo $id_deigancao;
+
+            // helper('funcoes');
+            // teste();
+
+            die();
+        }
         
         echo view('stocks/familias_adicionar', $data);
     }
@@ -84,5 +99,17 @@ class stocks extends BaseController
     {
 
         echo view('stocks/taxas');
+    }
+
+
+    // ==============================================================================
+    private function verDados($array){
+        echo '<pre>';
+        echo 'Dados do Array<hr>';
+        foreach($array as $key => $value) {
+            echo "<p>$key => $value</p>";
+        }
+        echo '</pre>';
+        die();
     }
 }
