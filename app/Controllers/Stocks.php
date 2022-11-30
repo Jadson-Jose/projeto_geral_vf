@@ -45,18 +45,19 @@ class stocks extends BaseController
             // Vai buscar os dados submetidos pelo fomrulario
             $request = \Config\Services::request();
             $id_parent = $request->getPost('select_parent');
-            $id_deigancao = $request->getPost('text_designacao');
+            $id_designacao = $request->getPost('text_designacao');
 
-            $this->verDados(array($id_parent, $id_deigancao));
-            
-            
-            // echo $id_parent. '<br>';
-            // echo $id_deigancao;
 
-            // helper('funcoes');
-            // teste();
+            // Verificar se ja existe a familia com o mesmo nome
+            $resultado = $model->check_family($id_designacao);
+            if ($resultado) {
+                die('ja existe');
+            } else {
+                die('nao existe');
+            }
+            //Guardar na base de dados o valor
 
-            die();
+              
         }
         
         echo view('stocks/familias_adicionar', $data);
@@ -102,14 +103,6 @@ class stocks extends BaseController
     }
 
 
-    // ==============================================================================
-    private function verDados($array){
-        echo '<pre>';
-        echo 'Dados do Array<hr>';
-        foreach($array as $key => $value) {
-            echo "<p>$key => $value</p>";
-        }
-        echo '</pre>';
-        die();
-    }
+   
+   
 }

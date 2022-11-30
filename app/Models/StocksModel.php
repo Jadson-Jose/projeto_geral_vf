@@ -28,4 +28,18 @@ class StocksModel extends Model
 
         return $this->database->query($query)->getResult('array');
     }
+
+    // ==============================================================================================
+    public function check_family($id_designacao) {
+
+        $params = array(
+            $id_designacao 
+        );
+        $results = $this->database->query("SELECT * FROM stock_familias WHERE designacao = ?", $params)->getResult('array');
+        if (count($results !=0)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

@@ -13,7 +13,7 @@
 
         <div class="col-12 mt-3">
 
-            <form action="<?php echo site_url('stocks/familias_adicionar')?>" method="post">
+            <form action="<?php echo site_url('stocks/familias_adicionar')?>" method="POST">
             
             <div class="form-group">
                 
