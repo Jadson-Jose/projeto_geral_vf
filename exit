@@ -1,0 +1,130 @@
+[33mcommit d00175cbee66597bd02f9975c50c65f802557f14[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jadson José da Silva <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Wed Nov 30 15:57:01 2022 -0300
+
+    Sync
+
+[33mcommit 0c2db4a48827845b3bed753e3fe6bc38bcb4ebea[m
+Author: Jadson José da Silva <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Tue Nov 15 08:55:55 2022 -0300
+
+    Sync.
+
+[33mcommit 62e610771aaf052ea029e856cb2c5f5b5eb35d89[m
+Author: Jadson José da Silva <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Tue Nov 8 21:31:23 2022 -0300
+
+    Problema de erro
+    
+    Estava havendo um problema quando adicionava um novo usuário, a rota do formulário estava errada  a certo é 'users/admin_new_user' na action do formulário.
+
+[33mcommit 4b948a4d6dc7ce5d13cb66a25304e187ccc42124[m
+Author: Jadson José da Silva <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Sat Oct 29 17:08:08 2022 -0300
+
+    Atualização de familias
+
+[33mcommit 6dbc9750ba79f737d7959e969b23add2d5e8e1f7[m
+Author: Jadson José da Silva <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Fri Oct 28 20:13:04 2022 -0300
+
+    Update Database.php
+
+[33mcommit 0b58474ad8f2bb76a7c36d4b1ea0674f9d7fd4c7[m
+Merge: 4d929d1 38f7e13
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Tue Apr 19 14:43:09 2022 -0300
+
+    Merge pull request #8 from Jadson-Jose/parentalidade_familias
+    
+    Parentalidade familias
+
+[33mcommit 38f7e1317fceb5ad67871e38ddb10601270c4349[m[33m ([m[1;31morigin/parentalidade_familias[m[33m)[m
+Author: Jadson-Jose <jadsonjosesilva@gmail.com>
+Date:   Tue Apr 19 14:42:39 2022 -0300
+
+    Parentalidade do componente famillia
+
+[33mcommit b1c515b8b5def528dc4334aa49c22bc32dadc9c1[m
+Merge: bcc3cc7 2581e89
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Tue Apr 19 14:10:21 2022 -0300
+
+    Merge pull request #7 from Jadson-Jose/melhoramento_familias
+    
+    cont.
+
+[33mcommit 4d929d194618283d5863184bd5a89bcd2b2434b3[m
+Merge: d3976aa 2581e89
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Fri Apr 15 08:45:55 2022 -0300
+
+    Merge pull request #6 from Jadson-Jose/melhoramento_familias
+    
+    Melhoramento familias
+
+[33mcommit 2581e89294c6d71dbc59af471f7554939b934a9d[m[33m ([m[1;31morigin/melhoramento_familias[m[33m)[m
+Author: Jadson-Jose <jadsonjosesilva@gmail.com>
+Date:   Fri Apr 15 08:43:50 2022 -0300
+
+    cont.
+
+[33mcommit bcc3cc7d08d794a5258a50b72883ca408e237033[m
+Merge: d6d6457 341996f
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Wed Apr 13 18:05:40 2022 -0300
+
+    Merge pull request #5 from Jadson-Jose/inicio_desenvolvimento_comp_familias
+    
+    Cont do projeto
+
+[33mcommit d3976aa00a31747906028da60b43682be69952d4[m
+Merge: a8ce5ab 341996f
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Wed Apr 13 17:59:17 2022 -0300
+
+    Merge pull request #4 from Jadson-Jose/inicio_desenvolvimento_comp_familias
+    
+    Inicio desenvolvimento comp familias
+
+[33mcommit 341996fdeaca469508755f3479b21709590fd33c[m[33m ([m[1;31morigin/inicio_desenvolvimento_comp_familias[m[33m)[m
+Author: Jadson-Jose <jadsonjosesilva@gmail.com>
+Date:   Wed Apr 13 17:44:22 2022 -0300
+
+    Cont do projeto
+
+[33mcommit d6d6457b1a661846aaaaad001c541a2466b64f95[m
+Merge: 8d2f641 072d64f
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Tue Mar 22 15:06:30 2022 -0300
+
+    Merge pull request #3 from Jadson-Jose/finaliação_do_layout
+    
+    Finalização do layout
+
+[33mcommit 072d64f7af875a2d798f877d7b0e54f92e79cb52[m[33m ([m[1;31morigin/finaliação_do_layout[m[33m)[m
+Author: Jadson-Jose <jadsonjosesilva@gmail.com>
+Date:   Tue Mar 22 15:06:02 2022 -0300
+
+    Finalização da estrutura base do layout da gestão
+
+[33mcommit 8d2f64152faf15603ea1469207957ea9018f0b3e[m
+Merge: a8ce5ab 3866a46
+Author: Jadson-Jose <69395306+Jadson-Jose@users.noreply.github.com>
+Date:   Tue Mar 22 14:27:11 2022 -0300
+
+    Merge pull request #2 from Jadson-Jose/inicio_backoffice
+    
+    Inicio do layout para a gestão de Stocks
+
+[33mcommit 3866a46db7038c3ad2ad34a65779f76c74c351b8[m[33m ([m[1;31morigin/inicio_backoffice[m[33m)[m
+Author: Jadson-Jose <jadsonjosesilva@gmail.com>
+Date:   Tue Mar 22 14:26:32 2022 -0300
+
+    Inicio do layout para a gestão de Stocks
+
+[33mcommit a8ce5ab63a9bd8d57b3ce2aff61b8970994c63ed[m
+Author: Jadson-Jose <jadsonjosesilva@gmail.com>
+Date:   Tue Mar 22 13:25:32 2022 -0300
+
+    Subido novamente o projeto sem erros no git
