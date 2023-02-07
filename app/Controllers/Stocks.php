@@ -39,25 +39,33 @@ class stocks extends BaseController
         // Carregar os dados das familias para passar para a view
         $model = new StocksModel();
         $data ['familias'] = $model->get_all_families();
+        $error = '';
 
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
           
             // Vai buscar os dados submetidos pelo fomrulario
             $request = \Config\Services::request();
             $id_parent = $request->getPost('select_parent');
-            $id_designacao = $request->getPost('text_designacao');
+            $designacao = $request->getPost('text_designacao');
 
 
             // Verificar se ja existe a familia com o mesmo nome
-            $resultado = $model->check_family($id_designacao);
+            $resultado = $model->check_family($designacao);
             if ($resultado) {
-                die('ja existe');
-            } else {
-                die('nao existe');
+                $error = 'Já existe uma família com essa designação.';
             }
+            
             //Guardar na base de dados o valor
+            if ($error == '') {
+                
+            }
 
               
+        }
+
+        // Tratamento de erro
+        if($error != ''){
+            $data['error'] = $error;
         }
         
         echo view('stocks/familias_adicionar', $data);

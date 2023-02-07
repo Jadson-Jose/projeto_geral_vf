@@ -15,6 +15,14 @@
 
             <form action="<?php echo site_url('stocks/familias_adicionar')?>" method="POST">
             
+            <?php if(isset($error)): ?>
+                <div class="alert alert-danger p-3 text-center" >
+                    <?php echo $error ?>
+                </div>
+            <?php endif; ?>
+            
+            
+            
             <div class="form-group">
                 
                 <label>Familia a que pertence</label>

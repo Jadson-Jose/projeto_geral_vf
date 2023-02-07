@@ -30,13 +30,13 @@ class StocksModel extends Model
     }
 
     // ==============================================================================================
-    public function check_family($id_designacao) {
+    public function check_family($designacao) {
 
         $params = array(
-            $id_designacao 
+            $designacao 
         );
         $results = $this->database->query("SELECT * FROM stock_familias WHERE designacao = ?", $params)->getResult('array');
-        if (count($results !=0)) {
+        if (count($results) != 0 ) {
             return true;
         } else {
             return false;
