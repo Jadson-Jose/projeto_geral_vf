@@ -42,22 +42,20 @@ class stocks extends BaseController
         $error = '';
 
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
           
             // Vai buscar os dados submetidos pelo fomrulario
             $request = \Config\Services::request();
-            $id_parent = $request->getPost('select_parent');
-            $designacao = $request->getPost('text_designacao');
-
-
+           
             // Verificar se ja existe a familia com o mesmo nome
-            $resultado = $model->check_family($designacao);
+            $resultado = $model->check_family($designacao = $request->getPost('text_designacao'));
             if ($resultado) {
                 $error = 'Já existe uma família com essa designação.';
             }
             
             //Guardar na base de dados o valor
             if ($error == '') {
-                
+                $model->family_add();                
             }
 
               

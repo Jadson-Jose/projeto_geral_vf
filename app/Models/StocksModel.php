@@ -42,4 +42,17 @@ class StocksModel extends Model
             return false;
         }
     }
+
+    // ==============================================================================================
+    public function family_add(){
+
+        // Adiciona uma nova familia de produtos a base de dados
+        $request = \Config\Services::request();
+        $params = array(
+            $request->getPost('select_parent'),
+            $request->getPost('text_designacao')
+        );
+
+        $this->query("INSERT INTO stock_familias")
+    }
 }
